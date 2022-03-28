@@ -12,6 +12,7 @@ namespace Tasks14
             string password = Console.ReadLine();
             User user1 = new User(username)
             {
+                Name = username,
                 Password = password
             };
             user1.GetInfo();

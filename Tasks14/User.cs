@@ -8,7 +8,7 @@ namespace Tasks14
     {
         public User(string name)
         {
-            this._name = name;
+
         }
 
 
@@ -46,15 +46,14 @@ namespace Tasks14
                         }
                         else if (char.IsLower(item))
                         {
-                            boolarr[0] = true;
+                            boolarr[1] = true;
                         }
                         else if (char.IsUpper(item))
                         {
-                            boolarr[0] = true;
+                            boolarr[2] = true;
                         }
                         if (boolarr[0] && boolarr[1] && boolarr[2])
                         {
-                            Console.WriteLine("Isledi");
                             _password = value;
                             break;
                         }
